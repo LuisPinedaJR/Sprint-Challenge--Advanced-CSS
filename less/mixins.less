@@ -1,1 +1,27 @@
 // Mixins Here
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.hover-background {
+  background-color: @sea-shell;
+  color: @river-bend;
+}
+// Parametric
+.button-black(@f, @c) {
+  display: @f;
+  justify-content: @c;
+  align-items: center;
+  border: 1px solid @btn-bg-color;
+  background-color: @btn-bg-color;
+  color: @nav-bg;
+  font-size: 1.7rem;
+  width: 30%;
+  height: 13%;
+  border-radius: 10px;
+}
+
+.animation {
+  text-decoration: line-through;
+  color: @river-bend;
+}
